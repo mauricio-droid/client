@@ -1,0 +1,60 @@
+<!-- <app-registro-usuarios></app-registro-usuarios> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 300px;
+            margin: auto;
+        }
+        input {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulario</h2>
+    <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="birthday">Fecha de Nacimiento:</label>
+        <input type="date" id="birthday" name="birthday" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="button" onclick="invest()">Invertir</button>
+        <button type="button" onclick="applyLoan()">Solicitar préstamo</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function invest() {
+            alert('Botón "Invertir" presionado.');
+        }
+        function applyLoan() {
+            alert('Botón "Solicitar préstamo" presionado.');
+        }
+    </script>
+
+</body>
+</html>
+
